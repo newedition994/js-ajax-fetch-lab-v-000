@@ -1,5 +1,11 @@
 function getIssues() {
   const repo = 'javascript-fetch-lab/issues';
+  fetch(repo, {
+    method: 'post',
+    headers: {
+      Authorization: `token ${getToken}`
+    }
+  })
 }
 
 function showIssues(json) {
