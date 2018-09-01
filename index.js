@@ -9,6 +9,10 @@ function showIssues(json) {
 }
 
 function createIssue() {
+  const issueBody = {
+    body: "test body"
+  }
+  fetch("https://api.github.com/repos/paaaarv/")
 }
 
 function showResults(json) {
