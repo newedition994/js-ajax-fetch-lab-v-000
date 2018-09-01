@@ -9,10 +9,18 @@ function getIssues() {
 }
 
 function showIssues(json) {
+  document.getElementById('body').innerHTML = json;
 }
 
 function createIssue() {
-  
+  const repo = '/javascript-fetch-lab/issues/';
+  fetch(repo, {
+    method: 'post',
+    body: 'test body',
+    headers: {
+      Authorization: `token ${getToken}`
+    }
+  }).then(res => res.json()).then(json => showIssues(json))
 }
 
 function showResults(json) {
