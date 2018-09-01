@@ -1,5 +1,9 @@
 function getIssues() {
-  fetch("http")
+  fetch("https://api.github.com/repos/paaaarv/javascript-fetch-lab/issues", {
+    headers: {
+      Authorization: `token: ${getToken()}`
+    }
+  })
 }
 
 function showIssues(json) {
