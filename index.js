@@ -1,5 +1,5 @@
 function getIssues() {
-  
+  const repo = 'javascript-fetch-lab/issues';
 }
 
 function showIssues(json) {
