@@ -1,4 +1,5 @@
 function getIssues() {
+  fetch("http")
 }
 
 function showIssues(json) {
