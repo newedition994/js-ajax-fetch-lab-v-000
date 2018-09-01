@@ -1,8 +1,8 @@
 function getIssues() {
   fetch("https://api.github.com/repos/paaaarv/javascript-fetch-lab/issues", {
     headers: {
-    Authorization: `token: ${getToken()`}
-  })
+    Authorization: `token: ${getToken()}`}
+  });
 }
 
 function showIssues(json) {
